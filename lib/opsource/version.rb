@@ -1,5 +1,5 @@
 module Opsource
-  VERSION = "0.3.0"
+  VERSION = "0.3.1"
 
   {"xmlns:ns3"=>"http://oec.api.opsource.net/schemas/organization",
     "xmlns:ns4"=>"http://oec.api.opsource.net/schemas/network",

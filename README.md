@@ -1,15 +1,13 @@
-## opsource-gem
+## Dimension Data Cloud gem 
 
-Opsource Cloud API gem designed for easy extensibility.
-
-See `lib/opsource/api` folder for examples how to add additional endpoints.
-
-Inspired by https://github.com/udayakiran/opsource.
-
+Dimension Data Cloud API gem designed for easy extensibility.
 
 ### Install
 
 either install as a gem via Bundler
+```
+gem install gem install didata_cloud_sdk
+```
 
 __or__
 
@@ -56,6 +54,12 @@ api/vip.rb
 ```
 
 See `doc` folder for API info needed for adding you own methods. `api/core.rb` is the plumbing.
+
+See `lib/opsource/api` folder for examples how to add additional endpoints.
+
+Inspired by https://github.com/udayakiran/opsource.
+
+
 
 
 ### TODO

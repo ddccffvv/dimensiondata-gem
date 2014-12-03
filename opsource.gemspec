@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "opsource/version"
 
 Gem::Specification.new do |s|
-  s.name        = "opsource"
+  s.name        = "didata_cloud_sdk"
   s.version     = Opsource::VERSION
-  s.authors     = ["Juozas Gaigalas", "Tim Wade"]
-  s.email       = ["juozasgaigalas@gmail.com", "pimpingeezer@gmail.com"]
+  s.authors     = ["Juozas Gaigalas", "Tim Wade", "Stijn Muylle"]
+  s.email       = ["juozasgaigalas@gmail.com", "pimpingeezer@gmail.com", "stijnmuylle@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Opsource REST API client gem}
-  s.description = %q{Simple wrapper to access opsource cloud's api'}
+  s.summary     = %q{Dimension Data REST API client gem}
+  s.description = %q{SDK to access Dimension Data Cloud api'}
 
   s.rubyforge_project = "opsource"
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'i18n'
-  s.add_dependency 'active_support'
+  s.add_dependency 'activesupport'
   s.add_dependency 'typhoeus'
   s.add_dependency 'xml-simple'
   s.add_dependency 'hashie'
