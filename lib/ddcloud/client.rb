@@ -1,8 +1,8 @@
-module Opsource
+module DDcloud
   class Client
-    include Opsource::Connection
-    include Opsource::Params
-    include Opsource::XML
+    include DDcloud::Connection
+    include DDcloud::Params
+    include DDcloud::XML
 
     attr_reader :api_base, :org_id, :username, :password
     attr_reader :image, :directory, :network, :server, :account, :report
@@ -35,31 +35,31 @@ module Opsource
     end
 
     def directory
-      Opsource::API::Directory.new(self)
+      DDcloud::API::Directory.new(self)
     end
 
     def image
-      Opsource::API::Image.new(self)
+      DDcloud::API::Image.new(self)
     end
 
     def network
-      Opsource::API::Network.new(self)
+      DDcloud::API::Network.new(self)
     end
 
     def server
-      Opsource::API::Server.new(self)
+      DDcloud::API::Server.new(self)
     end
 
     def account
-      Opsource::API::Account.new(self)
+      DDcloud::API::Account.new(self)
     end
 
     def report
-      Opsource::API::Report.new(self)
+      DDcloud::API::Report.new(self)
     end
 
     def vip
-      Opsource::API::VIP.new(self)
+      DDcloud::API::VIP.new(self)
     end
 
     def filter_params

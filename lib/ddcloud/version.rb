@@ -1,4 +1,4 @@
-module Opsource
+module DDcloud
   VERSION = "0.3.1"
 
   {"xmlns:ns3"=>"http://oec.api.opsource.net/schemas/organization",

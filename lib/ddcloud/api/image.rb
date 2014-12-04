@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class Image < Core
     def server_list
       endpoint '/base/image'

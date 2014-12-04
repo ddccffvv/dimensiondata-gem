@@ -1,4 +1,4 @@
-module Opsource
+module DDcloud
   module Params
     def url_query(params)
       params = camelize_keys(params)

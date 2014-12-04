@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class Core
     attr_reader :client
     def initialize(client)

@@ -1,4 +1,4 @@
-module Opsource
+module DDcloud
   module Exceptions
     CODES = {
       "REASON_10" => "Failure at network",

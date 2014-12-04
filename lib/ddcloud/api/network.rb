@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class Network < Core
     def list
       org_endpoint '/network'

@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class Directory < Core
     def data_center_list
       org_endpoint "/datacenterWithDiskSpeed"

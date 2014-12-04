@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class Server < Core
 
     # id

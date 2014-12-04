@@ -1,0 +1,22 @@
+require 'active_support/core_ext/object'
+require 'active_support/core_ext/string'
+require 'typhoeus'
+require 'xmlsimple'
+require 'hashie'
+
+require './ddcloud/version.rb'
+require './ddcloud/exceptions.rb'
+
+require './ddcloud/connection.rb'
+require './ddcloud/params.rb'
+require './ddcloud/xml.rb'
+require './ddcloud/client.rb'
+
+require './ddcloud/api/core.rb'
+require './ddcloud/api/directory.rb'
+require './ddcloud/api/image.rb'
+require './ddcloud/api/network.rb'
+require './ddcloud/api/server.rb'
+require './ddcloud/api/vip.rb'
+require './ddcloud/api/account.rb'
+require './ddcloud/api/report.rb'

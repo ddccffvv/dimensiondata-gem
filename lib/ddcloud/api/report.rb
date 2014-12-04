@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
     class Report < Core
         def auditlog(start_date, end_date)
             start = start_date.strftime("%Y-%m-%d")

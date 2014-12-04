@@ -1,4 +1,4 @@
-module Opsource::API
+module DDcloud::API
   class VIP < Core
 
   # Real Server section

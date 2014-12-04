@@ -1,4 +1,4 @@
-module Opsource
+module DDcloud
   module Connection
     def build_request(type, endpoint, query = nil, body = nil, xml=true)
       # url = "https://cloudapi.nttamerica.com/oec/0.9" + "/server"

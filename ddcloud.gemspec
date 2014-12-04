@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "opsource/version"
+require "ddcloud/version"
 
 Gem::Specification.new do |s|
   s.name        = "didata_cloud_sdk"
-  s.version     = Opsource::VERSION
+  s.version     = DDcloud::VERSION
   s.authors     = ["Juozas Gaigalas", "Tim Wade", "Stijn Muylle"]
   s.email       = ["juozasgaigalas@gmail.com", "pimpingeezer@gmail.com", "stijnmuylle@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Dimension Data REST API client gem}
   s.description = %q{SDK to access Dimension Data Cloud api'}
 
-  s.rubyforge_project = "opsource"
+  s.rubyforge_project = "ddcloud"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
