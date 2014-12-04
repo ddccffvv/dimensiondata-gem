@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.version     = DDcloud::VERSION
   s.authors     = ["Juozas Gaigalas", "Tim Wade", "Stijn Muylle"]
   s.email       = ["juozasgaigalas@gmail.com", "pimpingeezer@gmail.com", "stijnmuylle@gmail.com"]
+  s.licenses 	= ['MIT']
   s.homepage    = ""
   s.summary     = %q{Dimension Data REST API client gem}
   s.description = %q{SDK to access Dimension Data Cloud api'}
