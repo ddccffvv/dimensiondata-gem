@@ -81,7 +81,7 @@ module DDcloud
 	log message, color, mode, true
     end
     def log(message, color = nil, mode = nil, error=nil)
-      return if (@silent && not error)
+      return if (@silent && (not error))
       if @colors
         color = color.to_sym if color
         mode = mode.to_sym if mode
