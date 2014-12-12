@@ -43,17 +43,17 @@ module DDcloud
       if response.success?
         log "...........success!", :yellow
       elsif response.timed_out?
-        log "ERROR\n-----", :red
-        log "got a time out"
+        log_error "ERROR\n-----", :red
+        log_error "got a time out"
       elsif response.code == 0
         # Could not get an http response, something's wrong.
-        log "ERROR\n-----", :red
-        log response.return_message
+        log_error "ERROR\n-----", :red
+        log_error response.return_message
       else
         # Received a non-successful http response.
-        log "ERROR\n-----", :red
-        log "HTTP request failed: " + response.code.to_s, :red
-        log response.body, :yellow
+        log_error "ERROR\n-----", :red
+        log_error "HTTP request failed: " + response.code.to_s, :red
+        log_error response.body, :yellow
       end
     end
   end

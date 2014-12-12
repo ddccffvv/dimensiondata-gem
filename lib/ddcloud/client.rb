@@ -18,7 +18,7 @@ module DDcloud
 
 
 
-    def initialize(api_base, org_id, username, password, default_password="verysecurepassword", datacenter="EU1", colors = true, silent = false)
+    def initialize(api_base, org_id, username, password, default_password="verysecurepassword", datacenter="EU1", colors = true, silent = true)
       @api_base = api_base
       @org_id       = org_id
       @username     = username
@@ -77,8 +77,11 @@ module DDcloud
     end
 
     # mode: bold, underscore, default
-    def log(message, color = nil, mode = nil)
-      return if @silent
+    def log_error(message, color=nil, mode=nil)
+	log message, color, mode, true
+    end
+    def log(message, color = nil, mode = nil, error=nil)
+      return if (@silent && not error)
       if @colors
         color = color.to_sym if color
         mode = mode.to_sym if mode
