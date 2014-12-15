@@ -35,6 +35,9 @@ pp c.server.show_with_disks(server.network_id, server.id)
 
 ### Examples
 
+See ```/examples``` for more examples.
+
+
 ```
 #create a new network
 c.network.create("network-name", "description", "EU1")
