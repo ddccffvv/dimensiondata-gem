@@ -22,7 +22,7 @@ require 'ddcloud.rb'
 
 ```
 require "ddcloud"
-api_base      = "https://cloudapi.nttamerica.com/oec/0.9"
+api_base      = DDcloud::Client::API_URL[:eu]
 dev_org_id    = 'my-super-secret-org-numbersandletters'
 dev_user      = 'me'
 dev_password  = 'very secret'

@@ -17,6 +17,7 @@ module DDcloud
     attr_accessor :page_size, :page_number, :order_by, :filter_with
 
     IMAGES = {suse_ent_64: "d4edfe22-e2f0-11e2-84e5-180373fb68df", ubuntu_14_04: "abef3a94-3361-4ce4-a937-5e587042586a", ubuntu_12_04: "d4ed6d40-e2f0-11e2-84e5-180373fb68df", ubuntu_10_04: "d4edba02-e2f0-11e2-84e5-180373fb68df"}
+    API_URL = {na: "https://api-na.dimensiondata.com/oec/0.9", eu: "https://api-eu.dimensiondata.com/oec/0.9", au: "https://api-au.dimensiondata.com/oec/0.9", mea: "https://api-mea.dimensiondata.com/oec/0.9", ap: "https://api-ap.dimensiondata.com/oec/0.9"}
 
 
     def initialize(api_base, org_id, username, password, default_password="verysecurepassword", datacenter="EU1", colors = true, silent = true)

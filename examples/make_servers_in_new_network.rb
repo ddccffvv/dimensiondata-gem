@@ -8,6 +8,9 @@ require "optparse"
 require "./credentials.rb"
 
 def diff_id_hashes(h1, h2)
+	puts "in diff"
+	pp h1
+	pp h2
 	a1 = h1.map { |e| e[:id] }
 	a2 = h2.map { |e| e[:id] }
 	a2 - a1
@@ -15,7 +18,7 @@ end
 
 def block_until_server_normal(c, name)
 	while true do
-		if c.server.list(name: name)[:state] == "NORMAL"
+		if((not c.server.list(name: name).empty?) && (c.server.list(name: name)[:state] == "NORMAL"))
 			break
 		end
 		sleep 1
@@ -60,7 +63,7 @@ c = DDcloud::Client.new @credentials[:url], @credentials[:org_id], @credentials[
 c.network.create options[:name], "Automatically generated network"
 
 network_id = c.network.show_by_name(options[:name])[:id]
-image_id = "d4ed6d40-e2f0-11e2-84e5-180373fb68df" #default image id
+image_id = DDcloud::Client::IMAGES[:ubuntu_14_04] #image id for ubuntu 14.04
 
 
 before = c.server.list(network_id: network_id)
