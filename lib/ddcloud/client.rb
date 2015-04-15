@@ -16,6 +16,7 @@ module DDcloud
     attr_accessor :silent, :colors # log setting
     attr_accessor :page_size, :page_number, :order_by, :filter_with
 
+    IMAGES = {suse_ent_64: "d4edfe22-e2f0-11e2-84e5-180373fb68df", ubuntu_14_04: "abef3a94-3361-4ce4-a937-5e587042586a", ubuntu_12_04: "d4ed6d40-e2f0-11e2-84e5-180373fb68df", ubuntu_10_04: "d4edba02-e2f0-11e2-84e5-180373fb68df"}
 
 
     def initialize(api_base, org_id, username, password, default_password="verysecurepassword", datacenter="EU1", colors = true, silent = true)
